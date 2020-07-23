@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f0f2f5;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.head {
+  display: flex;
+  padding: 50px 0px;
+  flex-direction: column;
+  align-items: center;
+  /* height: 200px; */
+}
+
+h1 {
+  margin-bottom: 15px;
+  /* margin-right: 30px; */
+}
+
+form {
+  display: flex;
+  padding: 15px;
+}
+
+form input {
+  flex: 1;
+  margin-right: 5px;
+  border: none;
+  background: none;
+  border-bottom: solid 1px black;
+}
+
+form button {
+  padding: 5px;
+  color: white;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+form button {
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px 25px;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px 0px rgb(153, 153, 153);
+  width: 220px;
+  height: 300px;
+  margin: 5px 10px;
+}
+
+.card .delete {
+  float: right;
+  margin: 5px 0px;
+  padding: 2px 5px;
+  border: 1px solid black;
+  border-radius: 100px;
+  color: rgb(211, 0, 0);
+  font-size: 13px;
+  font-weight: 500;
+  transition-duration: 600ms;
+}
+
+.card .delete:hover {
+  cursor: pointer;
+  background-color: rgb(211, 0, 0);
+  color: white;
+  transition-duration: 400ms;
+}
+
+.card h3 {
+  display: inline-block;
+  width: 150px;
+  margin-left: 5px;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.card h3 span {
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  font-size: 10px;
+  padding: 3px 8px;
+  margin-left: 5px;
+  border-radius: 10px;
+  color: white;
+  line-height: normal;
+  background-color: orangered;
+}
+
+.card h2 {
+  margin-top: 12px;
+  margin-left: 5px;
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.card h2 span {
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  font-size: 0.5em;
+  font-weight: 300;
+}
+
+.card img {
+  width: 100px;
+  margin-top: 35px;
+  margin-left: 0px;
+}
+
+.card p {
+  margin-top: 0px;
+  margin-left: 20px;
+  color: rgb(85, 85, 85);
+  font-weight: 300;
+}
