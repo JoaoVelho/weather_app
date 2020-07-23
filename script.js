@@ -49,7 +49,7 @@ document.search.onsubmit = async (e) => {
 
   const input = e.target.childNodes[1];
 
-  const urlLocation = `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${apiKey}&q=${input.value}`;
+  const urlLocation = `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${apiKey}&q=${input.value}`;
 
   input.value = "";
 
@@ -57,7 +57,7 @@ document.search.onsubmit = async (e) => {
     const res = await fetch(urlLocation);
     const data = await res.json();
 
-    const urlWeather = `http://dataservice.accuweather.com/currentconditions/v1/${data[0].Key}?apikey=${apiKey}`;
+    const urlWeather = `https://dataservice.accuweather.com/currentconditions/v1/${data[0].Key}?apikey=${apiKey}`;
 
     const resW = await fetch(urlWeather);
     const dataW = await resW.json();
